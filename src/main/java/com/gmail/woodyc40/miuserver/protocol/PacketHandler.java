@@ -1,6 +1,7 @@
 package com.gmail.woodyc40.miuserver.protocol;
 
 import com.gmail.woodyc40.miuserver.Logger;
+import com.gmail.woodyc40.miuserver.frame.ObjectOutputStream;
 import com.gmail.woodyc40.miuserver.frame.threadsafe.ServerThread;
 import com.gmail.woodyc40.miuserver.protocol.event.EventHandler;
 
