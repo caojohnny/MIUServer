@@ -2,9 +2,6 @@ language: java
 jdk:
   - oraclejdk7
 branches:
-  except:
-    - builds
-branches:
   only:
     - master
 script: "mvn clean deploy --settings settings.xml"
