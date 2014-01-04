@@ -47,11 +47,11 @@
                 <configuration>
                     <message>Added artifacts</message>
                     <outputDirectory>${project.build.directory}/repo</outputDirectory>
-                    <branch>refs/heads/builds</branch>
+                    <branch>refs/heads/master</branch>
                     <includes>
                         <include>**/*</include>
                     </includes>
-                    <repositoryName>MIUServer</repositoryName>
+                    <repositoryName>MIUServerBuilds</repositoryName>
                     <repositoryOwner>AgentTroll</repositoryOwner>
                 </configuration>
                 <executions>
