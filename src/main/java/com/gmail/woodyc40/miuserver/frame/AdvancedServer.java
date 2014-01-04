@@ -17,18 +17,30 @@ import java.util.List;
 
 public class AdvancedServer implements BasicServer {
     ServerSocket socket = null;
+    boolean enabled = false;
     int port = 6969;
 
     public static List<Player> players = new LinkedList<>();
 
     @Override
     public void openConnections() {
+        if(enabled) {
+            return;
+        }
+        
         try {
             socket = new ServerSocket(port);
+            enabled = true;
         } catch (IOException e) {
             Logger.getInstance().logError("The socket could not bind to port", e);
         }
-
+    }
+    
+    public void enableConnection() {
+        if(!enabled) {
+            return;
+        }
+        
         Socket sock = null;
         while(true) {
             try {
@@ -54,16 +66,25 @@ public class AdvancedServer implements BasicServer {
                 Logger.getInstance().logError("Failed to bind " + sock.getRemoteSocketAddress().toString(), e);
             }
         }
-
     }
 
     @Override
     public void disconnect(Player p) {
+        if(!enabled) {
+            return;
+        }
+        
         PacketHandler.sendPacket(p.getStream(), new PacketDisconnect(p));
+        p.getStream().getClient().disconnect();
+        players.remove(p);
     }
 
     @Override
     public void listen() {
+        if(!enabled) {
+            return;
+        }
+        
         while(true) {
             for(Player p : players) {
                 ObjectInputStream stream = p.getStream().getClient().getClientInput();
@@ -73,6 +94,7 @@ public class AdvancedServer implements BasicServer {
                 } catch (IOException | ClassNotFoundException e) {
                     Logger.getInstance().logError("Packet could not be read", e);
                 }
+                
                 if(packet != null) {
                     PacketHandler.handlePacket(packet);
                 }
@@ -88,5 +110,25 @@ public class AdvancedServer implements BasicServer {
     @Override
     public Object read() {
         return null;
+    }
+    
+    public void shutdown() {
+        if(enabled) {
+            return;
+        }
+        
+        /*
+         * for(Player p : players) {
+         *     disconnect(p);
+         * }
+         * Figure out CME
+         */ 
+        
+        socket.close();
+        port = 0;
+    }
+    
+    public void loadPlugins() {
+        
     }
 }
