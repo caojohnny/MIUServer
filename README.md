@@ -34,7 +34,7 @@ EventAdapter adapter = new EventAdapter(PacketType.SEND, new CodeExecutor<Packet
     }
 });
 ```
-Note the PacketSends, they must be the same throughout, and the PacketType must be the same as the packet type.
+Note the PacketSend's, they must be the same throughout, and the PacketType must be the same as the packet type.
 An IllegalArgumentException will be thrown for a packet type that does not match the packet.
 
 You do not need to register the EventAdapter, it is automatically handled.
