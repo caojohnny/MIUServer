@@ -31,4 +31,11 @@ public class ClientObjectStream {
     public ObjectOutputStream getClientOutput() {
         return clientOutStream;
     }
+    
+    public void disconnect() {
+        clientInStream.close();
+        clientOutStream.close();
+        client.close();
+    }
+    
 }
