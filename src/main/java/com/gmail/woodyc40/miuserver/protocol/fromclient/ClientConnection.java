@@ -21,7 +21,7 @@ public class ClientConnection {
         writer = new ObjectOutputStream(socket.getOutputStream());
         reader = new ObjectInputStream(socket.getInputStream());
 
-        sendPacket(new com.gmail.woodyc40.miuserver.protocol.auth.Client());
+        sendPacket(new com.gmail.woodyc40.miuserver.protocol.auth.Client("RandomName"));
 
         long start = System.nanoTime();
         while(true) {
