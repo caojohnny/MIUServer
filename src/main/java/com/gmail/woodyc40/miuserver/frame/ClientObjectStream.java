@@ -1,5 +1,6 @@
 package com.gmail.woodyc40.miuserver.frame;
 
+import com.gmail.woodyc40.miuserver.Logger;
 import com.gmail.woodyc40.miuserver.protocol.auth.Client;
 
 import java.io.IOException;
@@ -33,9 +34,13 @@ public class ClientObjectStream {
     }
     
     public void disconnect() {
-        clientInStream.close();
-        clientOutStream.close();
-        client.close();
+        try {    
+            clientInStream.close();
+            clientOutStream.close();
+            client.close();
+        } catch(IOException e) {
+            Logger.getInstance().logError("Could not close connections, memory leaks imminent", e);
+        }
     }
     
 }
