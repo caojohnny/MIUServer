@@ -11,7 +11,11 @@ public class PacketHandler {
 
     public static void sendPacket(ServerThread thread, Packet packet) {
         try {
-            thread.getClient().getClientOutput().writeObject(packet);
+            ObjectOutputStream stream = thread.getClient().getClientOutput();
+            
+            stream.writeObject(packet);
+            stream.flush();
+            stream.reset();
         } catch (IOException e) {
             Logger.getInstance().logError("Packet could not be written to the stream", e);
         }
