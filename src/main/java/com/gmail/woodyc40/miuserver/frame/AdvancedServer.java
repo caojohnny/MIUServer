@@ -123,8 +123,11 @@ public class AdvancedServer implements BasicServer {
          * }
          * Figure out CME
          */ 
-        
-        socket.close();
+        try {
+            socket.close();
+        } catch(IOException e) {
+            Logger.getInstance().logError("Socket could not be closed", e);    
+        }    
         port = 0;
     }
     
