@@ -1,7 +1,7 @@
 package com.gmail.woodyc40.miuserver.protocol;
 
 import com.gmail.woodyc40.miuserver.Logger;
-import com.gmail.woodyc40.miuserver.frame.ObjectOutputStream;
+import com.gmail.woodyc40.miuserver.frame.ClientObjectStream;
 import com.gmail.woodyc40.miuserver.frame.threadsafe.ServerThread;
 import com.gmail.woodyc40.miuserver.protocol.event.EventHandler;
 
@@ -12,7 +12,7 @@ public class PacketHandler {
 
     public static void sendPacket(ServerThread thread, Packet packet) {
         try {
-            ObjectOutputStream stream = thread.getClient().getClientOutput();
+            ClientObjectStream stream = thread.getClient().getClientOutput();
             
             stream.writeObject(packet);
             stream.flush();
