@@ -1,9 +1,15 @@
 package com.gmail.woodyc40.miuserver.frame;
 
 import com.gmail.woodyc40.miuserver.Logger;
+import com.gmail.woodyc40.miuserver.api.entity.Player;
 import com.gmail.woodyc40.miuserver.frame.threadsafe.ServerThread;
+import com.gmail.woodyc40.miuserver.protocol.Packet;
+import com.gmail.woodyc40.miuserver.protocol.PacketHandler;
+import com.gmail.woodyc40.miuserver.protocol.auth.Client;
+import com.gmail.woodyc40.miuserver.protocol.toclient.PacketDisconnect;
 
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.LinkedList;
@@ -13,7 +19,7 @@ public class AdvancedServer implements BasicServer {
     ServerSocket socket = null;
     int port = 6969;
 
-    List<ServerThread> players = new LinkedList<>();
+    public static List<Player> players = new LinkedList<>();
 
     @Override
     public void openConnections() {
@@ -34,8 +40,13 @@ public class AdvancedServer implements BasicServer {
 
                     System.out.print("Connected client from " + sock.getRemoteSocketAddress().toString());
 
+                    Object authentication = cos.getClientInput().readObject();
+                    String name = ((Client) authentication).getName();
+
                     ServerThread thread = new ServerThread(cos);
-                    players.add(thread);
+                    Player p = new Player(thread, name);
+
+                    players.add(p);
                     thread.start();
                 }
             } catch (IOException | ClassNotFoundException e) {
@@ -47,13 +58,26 @@ public class AdvancedServer implements BasicServer {
     }
 
     @Override
-    public void disconnect() {
-
+    public void disconnect(Player p) {
+        PacketHandler.sendPacket(p.getStream(), new PacketDisconnect(p));
     }
 
     @Override
     public void listen() {
-
+        while(true) {
+            for(Player p : players) {
+                ObjectInputStream stream = p.getStream().getClient().getClientInput();
+                Packet packet = null;
+                try {
+                    packet = (Packet) stream.readObject();
+                } catch (IOException | ClassNotFoundException e) {
+                    Logger.getInstance().logError("Packet could not be read", e);
+                }
+                if(packet != null) {
+                    PacketHandler.handlePacket(packet);
+                }
+            }
+        }
     }
 
     @Override

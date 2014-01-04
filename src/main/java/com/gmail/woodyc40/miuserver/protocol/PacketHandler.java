@@ -9,13 +9,17 @@ import java.io.IOException;
 public class PacketHandler {
     ServerThread thread;
 
-    public void sendPacket(ServerThread thread, Packet packet) {
+    public static void sendPacket(ServerThread thread, Packet packet) {
         try {
             thread.getClient().getClientOutput().writeObject(packet);
         } catch (IOException e) {
             Logger.getInstance().logError("Packet could not be written to the stream", e);
         }
         new EventHandler().handleEvent(packet);
+    }
+
+    public static void handlePacket(Packet packet) {
+        //TODO
     }
 
 }
