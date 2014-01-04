@@ -14,9 +14,9 @@ public class PacketHandler {
         try {
             ClientObjectStream stream = thread.getClient().getClientOutput();
             
-            stream.writeObject(packet);
-            stream.flush();
-            stream.reset();
+            stream.getClientOutput().writeObject(packet);
+            stream.getClientOutput().flush();
+            stream.getClientOutput().reset();
         } catch (IOException e) {
             Logger.getInstance().logError("Packet could not be written to the stream", e);
         }
