@@ -1,6 +1,6 @@
 package com.gmail.woodyc40.miuserver.frame;
 
-import com.gmail.woodyc40.miuserver.protocol.Client;
+import com.gmail.woodyc40.miuserver.protocol.auth.Client;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -24,6 +24,11 @@ public class ClientObjectStream {
         return this;
     }
 
+    public ObjectInputStream getClientInput() {
+        return clientInStream;
+    }
 
-
+    public ObjectOutputStream getClientOutput() {
+        return clientOutStream;
+    }
 }

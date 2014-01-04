@@ -1,6 +1,7 @@
 package com.gmail.woodyc40.miuserver.frame;
 
 import com.gmail.woodyc40.miuserver.Logger;
+import com.gmail.woodyc40.miuserver.frame.threadsafe.ServerThread;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -10,16 +11,16 @@ import java.util.List;
 
 public class AdvancedServer implements BasicServer {
     ServerSocket socket = null;
-    int port = 69696;
+    int port = 6969;
 
-    List<ClientObjectStream> players = new LinkedList<>();
+    List<ServerThread> players = new LinkedList<>();
 
     @Override
     public void openConnections() {
         try {
             socket = new ServerSocket(port);
         } catch (IOException e) {
-            new Logger().getInstance().logError("The socket could not bind to port", e);
+            Logger.getInstance().logError("The socket could not bind to port", e);
         }
 
         Socket sock = null;
@@ -30,22 +31,19 @@ public class AdvancedServer implements BasicServer {
                     if(cos == null) {
                         continue;
                     }
+
                     System.out.print("Connected client from " + sock.getRemoteSocketAddress().toString());
 
-                    players.add(cos);
-
+                    ServerThread thread = new ServerThread(cos);
+                    players.add(thread);
+                    thread.start();
                 }
             } catch (IOException | ClassNotFoundException e) {
                 assert sock != null;
-                new Logger().getInstance().logError("Failed to bind " + sock.getRemoteSocketAddress().toString(), e);
+                Logger.getInstance().logError("Failed to bind " + sock.getRemoteSocketAddress().toString(), e);
             }
         }
 
-    }
-
-    @Override
-    public boolean accept() {
-        return false;
     }
 
     @Override

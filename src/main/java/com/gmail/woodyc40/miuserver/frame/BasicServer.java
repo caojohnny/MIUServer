@@ -4,8 +4,6 @@ public interface BasicServer {
 
     public void openConnections();
 
-    public boolean accept();
-
     public void disconnect();
 
     public void listen();
