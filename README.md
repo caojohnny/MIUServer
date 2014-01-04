@@ -4,7 +4,8 @@ Maintained by AgentTroll and TheKomputerKing.
 
 Builds/Status coming soon, while we're at it, check out [this](http://mineinunity.webs.com/apps/forums/topics/show/11879584-miu-servers-status)
 Builds!
-- [![Build Status](https://travis-ci.org/AgentTroll/MIUServer.png)](https://travis-ci.org/AgentTroll/MIUServer)
+- [![Build Status](https://travis-ci.org/AgentTroll/MIUServer.png?branch=master)](https://travis-ci.org/AgentTroll/MIUServer)
+
 - Download now at: http://github.com/AgentTroll/Builds/
 
 ====
