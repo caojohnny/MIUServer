@@ -3,7 +3,11 @@ The server implementation for [Mine In Unity](https://github.com/mattrick16/Mine
 Maintained by AgentTroll and TheKomputerKing.
 
 Builds/Status coming soon, while we're at it, check out [this](http://mineinunity.webs.com/apps/forums/topics/show/11879584-miu-servers-status)
-Builds!
+
+====
+
+**Builds**
+
 - [![Build Status](https://travis-ci.org/AgentTroll/MIUServer.png?branch=master)](https://travis-ci.org/AgentTroll/MIUServer)
 
 - Download now, direct link: https://github.com/AgentTroll/MIUServer/blob/builds/com/gmail/woodyc40/miuserver/MIUServer/1.0/MIUServer-1.0.jar?raw=true
