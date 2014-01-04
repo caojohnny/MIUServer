@@ -1,6 +1,9 @@
 language: java
 jdk:
   - oraclejdk7
+branches:
+  only:
+    - master
 script: "mvn clean deploy --settings settings.xml"
 notifications:
   email: false
