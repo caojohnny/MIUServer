@@ -23,7 +23,6 @@ Builds/Status coming soon, while we're at it, check out [this](http://mineinunit
 ```java
 
 EventHandler.register(new ClassName());
-
 ```
 or use the EventAdapter feature like so:
 ```java
@@ -34,7 +33,6 @@ EventAdapter adapter = new EventAdapter(PacketType.SEND, new CodeExecutor<Packet
         // Do stuff
     }
 });
-
 ```
 Note the PacketSends, they must be the same throughout, and the PacketType must be the same as the packet type.
 An IllegalArgumentException will be thrown for a packet type that does not match the packet.
