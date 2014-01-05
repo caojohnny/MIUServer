@@ -1,15 +1,8 @@
 package com.gmail.woodyc40.miuserver;
 
+import com.gmail.woodyc40.miuserver.frame.threadsafe.FinalWrapper;
 
 public class Logger {
-
-    public static class FinalWrapper<T> {
-        public final T value;
-        public FinalWrapper(T value) {
-            this.value = value;
-        }
-    }
-
     private static FinalWrapper<Logger> logger;
 
     public static Logger getInstance() {
