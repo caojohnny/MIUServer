@@ -10,7 +10,7 @@ Builds/Status coming soon, while we're at it, check out [this](http://mineinunit
 
 - [![Build Status](https://travis-ci.org/AgentTroll/MIUServer.png?branch=master)](https://travis-ci.org/AgentTroll/MIUServer)
 
-- Download now, direct link: https://github.com/AgentTroll/MIUServer/blob/builds/com/gmail/woodyc40/miuserver/MIUServer/1.0/MIUServer-1.0.jar?raw=true
+- Download now, direct link: https://github.com/AgentTroll/MIUServerBuilds/blob/master/com/gmail/woodyc40/miuserver/MIUServer/1.0/MIUServer-1.0.jar?raw=true
 
 ====
 
