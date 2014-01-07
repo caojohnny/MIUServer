@@ -1,6 +1,7 @@
 package com.gmail.woodyc40.miuserver.protocol.event;
 
 
+import com.gmail.woodyc40.miuserver.frame.threadsafe.FinalWrapper;
 import com.gmail.woodyc40.miuserver.protocol.Packet;
 import com.gmail.woodyc40.miuserver.util.CodeExecutor;
 
@@ -9,6 +10,24 @@ import java.util.List;
 
 public class EventHandler {
     static List<EventAdapter> registered = new ArrayList<>();
+
+    private static FinalWrapper<EventHandler> logger;
+
+    public static EventHandler getInstance() {
+        FinalWrapper<EventHandler> wrapper = logger;
+
+        if (wrapper == null) {
+            synchronized(EventHandler.class) {
+                if (logger == null) {
+                    logger = new FinalWrapper<>(new EventHandler());
+                }
+                wrapper = logger;
+            }
+        }
+        return wrapper.value;
+    }
+
+    private EventHandler() { }
 
     public void handleEvent(Packet p) {
         for(EventAdapter adapter : getEvent(p)) {

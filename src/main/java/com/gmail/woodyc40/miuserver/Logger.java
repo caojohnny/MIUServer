@@ -7,12 +7,11 @@ public class Logger {
 
     public static Logger getInstance() {
         FinalWrapper<Logger> wrapper = logger;
-        Logger log = new Logger();
 
         if (wrapper == null) {
-            synchronized(log) {
+            synchronized(Logger.class) {
                 if (logger == null) {
-                    logger = new FinalWrapper<>(log);
+                    logger = new FinalWrapper<>(new Logger());
                 }
                 wrapper = logger;
             }
@@ -23,10 +22,10 @@ public class Logger {
     private Logger() { }
 
     public void logError(String message, Throwable throwable) {
-        System.out.print("---------- ERROR ----------");
-        System.out.print(throwable.getCause() + ": " + message);
+        System.out.println("---------- ERROR ----------");
+        System.out.println(throwable.getCause() + ": " + message + "\n");
         throwable.printStackTrace();
-        System.out.print("---- END ERROR REPORT -----");
+        System.out.println("---- END ERROR REPORT -----");
     }
 
 }

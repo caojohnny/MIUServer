@@ -12,15 +12,15 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class AdvancedServer implements BasicServer {
     ServerSocket socket = null;
     boolean enabled = false;
     int port = 6969;
 
-    public static List<Player> players = new LinkedList<>();
+    public static List<Player> players = new CopyOnWriteArrayList<>();
 
     @Override
     public void openConnections() {
@@ -111,24 +111,24 @@ public class AdvancedServer implements BasicServer {
     public Object read() {
         return null;
     }
-    
+
     public void shutdown() {
         if(enabled) {
             return;
         }
-        
-        /*
-         * for(Player p : players) {
-         *     disconnect(p);
-         * }
-         * Figure out CME
-         */ 
+
+        for(Player p : players) {
+            disconnect(p);
+        }
+
         try {
             socket.close();
         } catch(IOException e) {
             Logger.getInstance().logError("Socket could not be closed", e);    
         }    
         port = 0;
+
+        System.exit(0);
     }
     
     public void loadPlugins() {

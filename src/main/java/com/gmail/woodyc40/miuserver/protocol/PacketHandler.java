@@ -1,6 +1,8 @@
 package com.gmail.woodyc40.miuserver.protocol;
 
 import com.gmail.woodyc40.miuserver.Logger;
+import com.gmail.woodyc40.miuserver.api.entity.Player;
+import com.gmail.woodyc40.miuserver.frame.AdvancedServer;
 import com.gmail.woodyc40.miuserver.frame.threadsafe.ServerThread;
 import com.gmail.woodyc40.miuserver.protocol.event.EventHandler;
 
@@ -20,11 +22,14 @@ public class PacketHandler {
         } catch (IOException e) {
             Logger.getInstance().logError("Packet could not be written to the stream", e);
         }
-        new EventHandler().handleEvent(packet);
+        EventHandler.getInstance().handleEvent(packet);
+        handlePacket(packet);
     }
 
     public static void handlePacket(Packet packet) {
-        //TODO
+        for(Player p : AdvancedServer.players) {
+            sendPacket(p.getStream(), packet);
+        }
     }
 
 }
