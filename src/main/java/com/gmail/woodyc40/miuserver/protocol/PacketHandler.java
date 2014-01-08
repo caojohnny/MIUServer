@@ -16,18 +16,18 @@ public class PacketHandler {
     private static FinalWrapper<PacketHandler> handler;
 
     public static Logger getInstance() {
-        FinalWrapper<PacketHandler> wrapper = logger;
+        FinalWrapper<PacketHandler> wrapper = logger;
 
-        if (wrapper == null) {
-            synchronized(PacketHandler.class) {
-                if (handler == null) {
-                    handler = new FinalWrapper<>(new Logger());
-                }
-                wrapper = handler;
-            }
-        }
-        return wrapper.value;
-    }
+        if (wrapper == null) {
+            synchronized(PacketHandler.class) {
+                if (handler == null) {
+                    handler = new FinalWrapper<>(new Logger());
+                }
+                wrapper = handler;
+            }
+        }
+        return wrapper.value;
+    }
 
     private void writePacket(ServerThread thread, Packet packet) {
         try {
