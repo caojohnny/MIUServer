@@ -1,14 +1,10 @@
 package com.gmail.woodyc40.miuserver.protocol.event;
 
-
-import com.gmail.woodyc40.miuserver.frame.ClientObjectStream;
-import com.gmail.woodyc40.miuserver.protocol.Packet;
-import com.gmail.woodyc40.miuserver.protocol.PacketType;
+import com.gmail.woodyc40.miuserver.frame.ClientObjectStream
 
 import java.io.Serializable;
 
-public class PacketSend implements Packet, Serializable {
-    private static final long serialVersionUID = 5828032708385937889L;
+public class PacketSend 
 
     Packet packet;
     ClientObjectStream destination;
@@ -27,12 +23,7 @@ public class PacketSend implements Packet, Serializable {
     }
 
     @Override
-    public void onSend() {
-
-    }
-
-    @Override
-    public PacketType getType() {
-        return PacketType.SEND;
+    public void onEvent() {
+        
     }
 }
