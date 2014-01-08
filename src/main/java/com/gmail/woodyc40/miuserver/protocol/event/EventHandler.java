@@ -49,14 +49,15 @@ public class EventHandler {
         registered.add(adapter);
     }
 
-    public static void register(final Packet p) {
-        EventAdapter adapter = new EventAdapter(p.getType(), new CodeExecutor<Packet>() {
+    public static void register(final Event e) {
+        EventAdapter adapter = new EventAdapter(new CodeExecutor<Event>() {
             @Override
-            public void runCode(Packet packet) {
-                p.onSend();
+            public void runCode(Event event) {
+                if(event instanceof e) {
+                    event.onEvent();
+                }
             }
         });
-        registered.add(adapter);
     }
 
 }
