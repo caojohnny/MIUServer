@@ -17,7 +17,7 @@ public class ServerThread extends Thread {
     }
 
     public void run() {
-        ObjectInputStream in = client.getInput();
+        ObjectInputStream in = client.getClientInput();
         Object o;
         if((o = in.readObject()) != null && o instanceof Packet) {
             PacketHandler.handlePacket((Packet) o);
