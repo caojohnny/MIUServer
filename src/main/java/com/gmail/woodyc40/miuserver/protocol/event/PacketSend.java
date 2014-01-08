@@ -1,6 +1,7 @@
 package com.gmail.woodyc40.miuserver.protocol.event;
 
 import com.gmail.woodyc40.miuserver.frame.ClientObjectStream;
+import com.gmail.woodyc40.miuserver.protocol.Packet;
 
 public class PacketSend implements Event {
 
