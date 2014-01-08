@@ -15,13 +15,13 @@ public class PacketHandler {
 
     private static FinalWrapper<PacketHandler> handler;
 
-    public static Logger getInstance() {
+    public static PacketHandler getInstance() {
         FinalWrapper<PacketHandler> wrapper = logger;
 
         if (wrapper == null) {
             synchronized(PacketHandler.class) {
                 if (handler == null) {
-                    handler = new FinalWrapper<>(new Logger());
+                    handler = new FinalWrapper<>(new PacketHandler());
                 }
                 wrapper = handler;
             }
