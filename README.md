@@ -16,6 +16,8 @@ Builds/Status coming soon, while we're at it, check out [this](http://mineinunit
 
 **Protocol**
 
+MAJOR REWORK COMING SOON.
+
 - Your listener classes must extend the event class
 - Override the onSend() method to execute your code
 - Register by calling
