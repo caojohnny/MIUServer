@@ -74,7 +74,7 @@ public class AdvancedServer implements BasicServer {
             return;
         }
         
-        PacketHandler.sendPacket(p.getStream(), new PacketDisconnect(p));
+        PacketHandler.handlePacket(p.getStream(), new PacketDisconnect(p));
         p.getStream().getClient().disconnect();
         players.remove(p);
     }
