@@ -1,10 +1,8 @@
 package com.gmail.woodyc40.miuserver.protocol.event;
 
-import com.gmail.woodyc40.miuserver.frame.ClientObjectStream
+import com.gmail.woodyc40.miuserver.frame.ClientObjectStream;
 
-import java.io.Serializable;
-
-public class PacketSend 
+public class PacketSend implements Event {
 
     Packet packet;
     ClientObjectStream destination;
@@ -23,7 +21,7 @@ public class PacketSend
     }
 
     @Override
-    public void onEvent() {
+    public void onEvent(PacketSend e) {
         
     }
 }
