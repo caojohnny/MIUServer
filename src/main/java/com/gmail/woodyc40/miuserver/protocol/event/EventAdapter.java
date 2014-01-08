@@ -12,16 +12,15 @@ public class EventAdapter {
     CodeExecutor<Packet> executor;
     Packet packet;
 
-    public EventAdapter(PacketType type, CodeExecutor<Packet> executor) {
-        Class<Packet> persistentClass = (Class<Packet>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
-        if(type.getArgs() != persistentClass) {
-            Logger.getInstance().logError("Cannot register different packet types",
-                    new IllegalArgumentException());
-        }
-
+    public EventAdapter(PacketType type, CodeExecutor<Packet> executor) {       
         this.type = type;
         this.executor = executor;
 
+        EventHandler.register(this);
+    }
+
+    public EventAdapter(CodeExecutor<? implements Event> ce) {
+        this.executor = ce;
         EventHandler.register(this);
     }
 
