@@ -16,27 +16,23 @@ Builds/Status coming soon, while we're at it, check out [this](http://mineinunit
 
 **Protocol**
 
-MAJOR REWORK COMING SOON.
-
 - Your listener classes must extend the event class
-- Override the onSend() method to execute your code
+- Override the onEvent() method to execute your code
 - Register by calling
 
 ```java
 
-EventHandler.register(new ClassName());
+EventHandler.getInstance().register(new ClassName());
 ```
 or use the EventAdapter feature like so:
 ```java
 
-EventAdapter adapter = new EventAdapter(PacketType.SEND, new CodeExecutor<PacketSend>() {
+EventAdapter adapter = new EventAdapter(new CodeExecutor<PacketSend>(new PacketSend()) {
     @Override
-    public void runCode(PacketSend packet) {
+    public void runCode(PacketSend event) {
         // Do stuff
     }
 });
 ```
-Note the PacketSend's, they must be the same throughout, and the PacketType must be the same as the packet type.
-An IllegalArgumentException will be thrown for a packet type that does not match the packet.
 
 You do not need to register the EventAdapter, it is automatically handled.

@@ -10,24 +10,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36eb003b-47a5-4dc7-a16f-879184be5b4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/fromclient/PacketPlayerMove.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/AdvancedServer.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/AdvancedServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/ClientObjectStream.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/ClientObjectStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/util/CodeExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/util/CodeExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/Event.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/Event.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/EventAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/EventAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/EventHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/EventHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/Logger.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/Logger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MIUServer.iml" afterPath="$PROJECT_DIR$/MIUServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/MIUServer.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/MIUServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/PacketHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/PacketHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/PacketSend.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/PacketSend.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/PacketType.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/PacketType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/threadsafe/ServerThread.java" afterPath="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/threadsafe/ServerThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/Material.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/PacketType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/ServerHandler.java" />
+      <change type="DELETED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\api\Material.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\api\ServerHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\protocol\PacketType.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\Logger.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/Logger.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\MIUServer.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/MIUServer.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\api\Location.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/Location.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\api\block\Block.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/block/Block.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\api\entity\Player.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/entity/Player.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\frame\AdvancedServer.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/AdvancedServer.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\frame\BasicServer.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/BasicServer.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\frame\ClientObjectStream.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/ClientObjectStream.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\frame\threadsafe\FinalWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/threadsafe/FinalWrapper.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\frame\threadsafe\Listener.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/threadsafe/Listener.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\frame\threadsafe\ServerThread.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/threadsafe/ServerThread.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\protocol\Packet.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/Packet.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\protocol\PacketHandler.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/PacketHandler.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\protocol\auth\Client.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/auth/Client.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\protocol\bothways\PacketBlockBreak.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/bothways/PacketBlockBreak.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\protocol\event\Event.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/Event.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\protocol\event\EventAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventAdapter.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\protocol\event\EventHandler.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventHandler.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\protocol\event\PacketSend.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/PacketSend.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\protocol\fromclient\ClientConnection.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/fromclient/ClientConnection.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\protocol\fromclient\PacketPlayerMove.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/fromclient/PacketPlayerMove.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\protocol\toclient\PacketDisconnect.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/toclient/PacketDisconnect.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\util\CodeExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/util/CodeExecutor.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\com\gmail\woodyc40\miuserver\util\ReturnableCodeExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/util/ReturnableCodeExecutor.java" />
     </list>
     <ignored path="MIUServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,19 +55,19 @@
     <file path="$PROJECT_DIR$/../UtilityLib/src/main/java/com/gmail/woodyc40/utilitylib/reflection/framework/ReflectedClass.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388724334540" ignored="false" />
     <file path="$PROJECT_DIR$/../UtilityLib/src/main/java/com/gmail/woodyc40/utilitylib/reflection/ReflectionUtil.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388887212741" ignored="false" />
     <file path="/pom.xml" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389150445849" ignored="false" />
-    <file path="/AdvancedServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229173987" ignored="false" />
+    <file path="/AdvancedServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229654299" ignored="false" />
     <file path="/Logger.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389155988564" ignored="false" />
     <file path="/ObjectStream.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388727833554" ignored="false" />
     <file path="/ClientObjectStream.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389157101333" ignored="false" />
-    <file path="/Dummy.txt" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389226406819" ignored="false" />
-    <file path="/Client.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389157148383" ignored="false" />
+    <file path="/Dummy.txt" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229256784" ignored="false" />
+    <file path="/Client.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229401621" ignored="false" />
     <file path="/.travis.yml" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388792019199" ignored="false" />
     <file path="/ServerThread.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389227035556" ignored="false" />
     <file path="/Event.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229132637" ignored="false" />
     <file path="/ServerSingleton.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388793398981" ignored="false" />
     <file path="/ClientConnection.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388795453519" ignored="false" />
     <file path="/PacketHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229009508" ignored="false" />
-    <file path="/EventHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229062415" ignored="false" />
+    <file path="/EventHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389230017639" ignored="false" />
     <file path="/CodeExecutor.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389228892895" ignored="false" />
     <file path="/ReturnableCodeExecutor.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388796479483" ignored="false" />
     <file path="/EventAdapter.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389228496492" ignored="false" />
@@ -59,7 +75,7 @@
     <file path="/PacketSend.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229148991" ignored="false" />
     <file path="/Packet.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388798240315" ignored="false" />
     <file path="/MIUServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389228871275" ignored="false" />
-    <file path="/README.md" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388799037078" ignored="false" />
+    <file path="/README.md" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389230302648" ignored="false" />
     <file path="/PacketDisconnect.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388800379955" ignored="false" />
     <file path="/Player.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388800096661" ignored="false" />
     <file path="/ServerHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388800255648" ignored="false" />
@@ -95,11 +111,12 @@
     <file path="/Listener.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389060914415" ignored="false" />
     <file path="/fragment.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389226878318" ignored="false" />
     <file path="/PacketPlayerMove.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389152046350" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/MIUClient.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229219931" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/MIUClient.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229469452" ignored="false" />
     <file path="/MIUClient.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389157042623" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/Clietn.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389155783808" ignored="false" />
     <file path="/Clietn.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389155783808" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/Client.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389155791208" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/Client.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229401621" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/com/gmail/woodyc40/protocol/auth/Client.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229430122" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,31 +177,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AdvancedServer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/AdvancedServer.java">
+      <file leaf-file-name="MIUServer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/MIUServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="11" selection-start="2772" selection-end="2772" vertical-scroll-proportion="0.0">
+            <state line="14" column="34" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="22" selection-start="653" selection-end="653" vertical-scroll-proportion="0.36998853">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ServerThread.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/threadsafe/ServerThread.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/threadsafe/ServerThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="16" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
+            <state line="21" column="16" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MIUServer.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/MIUServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="41" selection-start="626" selection-end="626" vertical-scroll-proportion="0.29209623">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -207,22 +224,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/threadsafe/FinalWrapper.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/fromclient/PacketPlayerMove.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/Logger.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/ClientObjectStream.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/auth/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/threadsafe/ServerThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/PacketType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/MIUServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/util/CodeExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/EventAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/PacketHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/EventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/Event.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/PacketSend.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/AdvancedServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/EventHandler.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/MIUServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/MIUServer.java" />
       </list>
     </option>
   </component>
@@ -392,30 +409,8 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miuserver" />
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -442,338 +437,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="miuserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miuserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protocol" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miuserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protocol" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="toclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miuserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protocol" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fromclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miuserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protocol" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="event" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miuserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protocol" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bothways" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miuserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protocol" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miuserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miuserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadsafe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miuserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MIUServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="miuserver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="block" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -990,7 +653,11 @@
       <created>1389061372603</created>
       <updated>1389061372603</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Reworked the event handling system :)">
+      <created>1389229273649</created>
+      <updated>1389229273649</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1000,6 +667,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1010,11 +678,10 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33724654" sideWeight="0.67074525" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6006674" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3192436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955604" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1061,7 +728,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added protocol&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reworked the event handling system :)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1079,6 +746,7 @@
     <MESSAGE value="More code." />
     <MESSAGE value="Lol, compile-time errors already ;)" />
     <MESSAGE value="Added protocol&#10;" />
+    <MESSAGE value="Reworked the event handling system :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1088,23 +756,97 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="45" selection-start="995" selection-end="995" vertical-scroll-proportion="0.91334486">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/Java/jdk7/src.zip!/java/io/ObjectInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="359" column="24" selection-start="16453" selection-end="16453" vertical-scroll-proportion="0.50953203">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/ClientObjectStream.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/ClientObjectStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="50" selection-start="381" selection-end="381" vertical-scroll-proportion="0.08838821">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/fromclient/ClientConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="46" selection-start="100" selection-end="100" vertical-scroll-proportion="-0.7088388">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/PacketHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="75" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.79376084">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/PacketType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="297" selection-end="297" vertical-scroll-proportion="0.2357019">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="30" selection-start="147" selection-end="147" vertical-scroll-proportion="0.14731368">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/PacketSend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="20" selection-start="712" selection-end="712" vertical-scroll-proportion="0.5647194">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/util/CodeExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="15" selection-start="232" selection-end="232" vertical-scroll-proportion="0.23367697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="401" selection-end="401" vertical-scroll-proportion="0.25315005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="27" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.4742268">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/AdvancedServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="47" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/auth/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="99" selection-start="345" selection-end="345" vertical-scroll-proportion="0.33104238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/threadsafe/ServerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="16" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/ServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.11604095">
           <folding />
         </state>
       </provider>
@@ -1116,90 +858,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/fromclient/ClientConnection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/MIUServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="46" selection-start="100" selection-end="100" vertical-scroll-proportion="-0.7088388">
+        <state line="14" column="34" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/util/CodeExecutor.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="15" selection-start="232" selection-end="232" vertical-scroll-proportion="0.35355285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/PacketHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="75" selection-start="1840" selection-end="1840" vertical-scroll-proportion="0.79376084">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/PacketType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="297" selection-end="297" vertical-scroll-proportion="0.2357019">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/PacketSend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="20" selection-start="712" selection-end="712" vertical-scroll-proportion="0.79549396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="30" selection-start="147" selection-end="147" vertical-scroll-proportion="0.14731368">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/auth/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="97" selection-end="97" vertical-scroll-proportion="0.11785095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/EventAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="401" selection-end="401" vertical-scroll-proportion="0.3830156">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/AdvancedServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="11" selection-start="2772" selection-end="2772" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/frame/threadsafe/ServerThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="16" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/protocol/event/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="21" selection-start="1444" selection-end="1444" vertical-scroll-proportion="1.2023346">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gmail/woodyc40/miuserver/MIUServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="41" selection-start="626" selection-end="626" vertical-scroll-proportion="0.29209623">
+        <state line="19" column="22" selection-start="653" selection-end="653" vertical-scroll-proportion="0.36998853">
           <folding />
         </state>
       </provider>

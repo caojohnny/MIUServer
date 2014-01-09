@@ -80,7 +80,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.gmail.woodyc40.miuserver.MIUServer</mainClass>
+                            <mainClass>info.mineinunity.miuserver.MIUServer</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
