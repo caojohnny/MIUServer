@@ -21,6 +21,7 @@ public class ClientObjectStream {
         Object packet;
         while (true) {
             if ((packet = clientInStream.readObject()) != null && packet instanceof Client) {
+                Logger.getInstance().log("Successfully authenticated");
                 break;
             }
         }

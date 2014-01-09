@@ -18,7 +18,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class AdvancedServer implements BasicServer {
     private ServerSocket socket = null;
     private boolean enabled = false;
-    private int port = 6969;
+    private int port = 9001;
 
     public static final List<Player> players = new CopyOnWriteArrayList<>();
 
@@ -55,12 +55,8 @@ public class AdvancedServer implements BasicServer {
                     String name = ((Client) authentication).getName();
 
                     ServerThread thread = new ServerThread(cos);
-                    Player p = new Player(thread, name);
-
-                    Logger.getInstance().log("Successfully connected " + name);
-
-                    players.add(p);
                     thread.start();
+                    players.add(new Player(thread, name));
                 }
             } catch (IOException | ClassNotFoundException e) {
                 assert sock != null;

@@ -1,6 +1,6 @@
 package info.mineinunity.miuserver.protocol;
 
-import info.mineinunity.miuserver.protocol.bothways.PacketBlockBreak;
+import info.mineinunity.miuserver.protocol.fromclient.PacketBlockBreak;
 import info.mineinunity.miuserver.protocol.fromclient.PacketPlayerMove;
 import info.mineinunity.miuserver.protocol.toclient.PacketDisconnect;
 

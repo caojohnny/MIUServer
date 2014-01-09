@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 class ClientConnection {
-    private int port = 6969;
+    private int port = 9001;
     private Socket socket = null;
     private String ip = "";
 

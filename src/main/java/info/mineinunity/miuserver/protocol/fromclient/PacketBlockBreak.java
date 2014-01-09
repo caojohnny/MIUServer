@@ -1,4 +1,4 @@
-package info.mineinunity.miuserver.protocol.bothways;
+package info.mineinunity.miuserver.protocol.fromclient;
 
 import info.mineinunity.miuserver.api.block.Block;
 import info.mineinunity.miuserver.protocol.Packet;
