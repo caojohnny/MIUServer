@@ -1,7 +1,7 @@
 package info.mineinunity.miuserver.util;
 
 public abstract class CodeExecutor<T> {
-    T t;
+    private final T t;
 
     public abstract void runCode(T t);
 

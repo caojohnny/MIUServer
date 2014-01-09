@@ -3,7 +3,7 @@ package info.mineinunity.miuserver.frame.threadsafe;
 import info.mineinunity.miuserver.util.CodeExecutor;
 
 public class Listener extends Thread {
-    CodeExecutor<Boolean> ce;
+    private final CodeExecutor<Boolean> ce;
 
     public Listener(CodeExecutor<Boolean> ce) {
         this.ce = ce;

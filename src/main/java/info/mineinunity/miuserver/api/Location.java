@@ -2,9 +2,9 @@ package info.mineinunity.miuserver.api;
 
 public class Location {
 
-    double x;
-    double y;
-    double z;
+    private final double x;
+    private final double y;
+    private final double z;
 
     public Location(double x, double y, double z) {
         this.x = x;

@@ -29,7 +29,7 @@ public class PacketHandler {
         return wrapper.value;
     }
 
-    private static void writePacket(ServerThread thread, Packet packet) {
+    private void writePacket(ServerThread thread, Packet packet) {
         try {
             ObjectOutputStream stream = thread.getClient().getClientOutput();
 
@@ -41,12 +41,12 @@ public class PacketHandler {
         }
     }
 
-    public static void sendPacket(ServerThread thread, Packet packet) {
+    private void sendPacket(ServerThread thread, Packet packet) {
         writePacket(thread, packet);
         EventHandler.getInstance().handleEvent(new PacketSend(packet, thread.getClient()));
     }
 
-    public static void handlePacket(Packet packet) {
+    public void handlePacket(Packet packet) {
         for (Player p : AdvancedServer.players) {
             sendPacket(p.getStream(), packet);
         }

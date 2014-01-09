@@ -16,11 +16,11 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class AdvancedServer implements BasicServer {
-    ServerSocket socket = null;
-    boolean enabled = false;
-    int port = 6969;
+    private ServerSocket socket = null;
+    private boolean enabled = false;
+    private int port = 6969;
 
-    public static List<Player> players = new CopyOnWriteArrayList<>();
+    public static final List<Player> players = new CopyOnWriteArrayList<>();
 
     @Override
     public void openConnections() {
@@ -76,7 +76,7 @@ public class AdvancedServer implements BasicServer {
             return;
         }
 
-        PacketHandler.handlePacket(new PacketDisconnect(p));
+        PacketHandler.getInstance().handlePacket(new PacketDisconnect(p));
         p.getStream().getClient().disconnect();
         players.remove(p);
     }
@@ -99,7 +99,7 @@ public class AdvancedServer implements BasicServer {
                 }
 
                 if (packet != null) {
-                    PacketHandler.handlePacket(packet);
+                    PacketHandler.getInstance().handlePacket(packet);
                 }
             }
         }

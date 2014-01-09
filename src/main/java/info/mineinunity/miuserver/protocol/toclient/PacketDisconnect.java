@@ -10,7 +10,7 @@ import java.io.Serializable;
 public class PacketDisconnect implements Packet, Serializable {
     private static final long serialVersionUID = 5128917118051330428L;
 
-    Player player;
+    private final Player player;
 
     public PacketDisconnect(Player p) {
         this.player = p;

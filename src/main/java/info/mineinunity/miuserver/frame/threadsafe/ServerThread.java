@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 
 public class ServerThread extends Thread {
-    ClientObjectStream client;
+    private final ClientObjectStream client;
 
     public ServerThread(ClientObjectStream client) {
         this.client = client;
@@ -24,7 +24,7 @@ public class ServerThread extends Thread {
         Object o;
         try {
             if ((o = in.readObject()) != null && o instanceof Packet) {
-                PacketHandler.handlePacket((Packet) o);
+                PacketHandler.getInstance().handlePacket((Packet) o);
             }
         } catch (IOException | ClassNotFoundException e) {
             Logger.getInstance().logError("Packet could not be handled", e);

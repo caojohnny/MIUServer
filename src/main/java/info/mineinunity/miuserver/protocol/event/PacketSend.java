@@ -5,8 +5,8 @@ import info.mineinunity.miuserver.protocol.Packet;
 
 public class PacketSend implements Event<PacketSend> {
 
-    Packet packet;
-    ClientObjectStream destination;
+    private final Packet packet;
+    private final ClientObjectStream destination;
 
     public PacketSend(Packet packet, ClientObjectStream destination) {
         this.packet = packet;

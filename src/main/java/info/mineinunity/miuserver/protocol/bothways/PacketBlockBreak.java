@@ -9,7 +9,7 @@ import java.io.Serializable;
 public class PacketBlockBreak implements Packet, Serializable {
     private static final long serialVersionUID = -1739894988291076245L;
 
-    Block b;
+    private final Block b;
 
     public PacketBlockBreak(Block b) {
         this.b = b;

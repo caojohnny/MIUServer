@@ -2,8 +2,8 @@ package info.mineinunity.miuserver.protocol.event;
 
 import info.mineinunity.miuserver.util.CodeExecutor;
 
-public class EventAdapter {
-    CodeExecutor<Event<? extends Event<?>>> ce;
+class EventAdapter {
+    private final CodeExecutor<Event<? extends Event<?>>> ce;
 
     public EventAdapter(CodeExecutor<Event<? extends Event<?>>> ce) {
         this.ce = ce;

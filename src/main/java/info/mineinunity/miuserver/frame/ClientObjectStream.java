@@ -9,9 +9,9 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 public class ClientObjectStream {
-    ObjectInputStream clientInStream;
-    ObjectOutputStream clientOutStream;
-    Socket client;
+    private ObjectInputStream clientInStream;
+    private ObjectOutputStream clientOutStream;
+    private Socket client;
 
     public ClientObjectStream connect(Socket client) throws IOException, ClassNotFoundException {
         this.clientInStream = new ObjectInputStream(client.getInputStream());

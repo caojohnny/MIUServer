@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EventHandler {
-    static List<EventAdapter> registered = new ArrayList<>();
+    private static final List<EventAdapter> registered = new ArrayList<>();
 
     private static FinalWrapper<EventHandler> logger;
 

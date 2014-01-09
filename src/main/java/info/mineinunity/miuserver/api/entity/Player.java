@@ -4,8 +4,8 @@ import info.mineinunity.miuserver.frame.threadsafe.ServerThread;
 
 public class Player {
 
-    ServerThread thread;
-    String name;
+    private final ServerThread thread;
+    private final String name;
 
     public Player(ServerThread thread, String name) {
         this.thread = thread;

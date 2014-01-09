@@ -6,13 +6,13 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 
-public class ClientConnection {
-    int port = 6969;
-    Socket socket = null;
-    String ip = "";
+class ClientConnection {
+    private int port = 6969;
+    private Socket socket = null;
+    private String ip = "";
 
-    ObjectOutputStream writer = null;
-    ObjectInputStream reader = null;
+    private ObjectOutputStream writer = null;
+    private ObjectInputStream reader = null;
 
     public ClientConnection(String address) throws Throwable {
         ip = address;
@@ -43,11 +43,11 @@ public class ClientConnection {
         return successful;
     }
 
-    public ObjectInputStream listenPacketSend() throws Throwable {
+    public ObjectInputStream listenPacketSend() {
         return reader;
     }
 
-    public void sendPacket(Object packet) throws Throwable {
+    void sendPacket(Object packet) throws Throwable {
         writer.writeObject(packet);
         writer.flush();
         writer.reset();
