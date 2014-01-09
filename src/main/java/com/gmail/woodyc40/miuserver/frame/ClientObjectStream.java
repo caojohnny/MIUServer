@@ -18,8 +18,11 @@ public class ClientObjectStream {
         this.clientOutStream = new ObjectOutputStream(client.getOutputStream());
         this.client = client;
 
-        if(!(clientInStream.readObject() instanceof Client)) {
-            return null;
+        Object packet;
+        while(true) {
+            if((packet = clientInStream.readObject()) != null && packet instanceof Client) {
+                break;
+            }
         }
 
         return this;

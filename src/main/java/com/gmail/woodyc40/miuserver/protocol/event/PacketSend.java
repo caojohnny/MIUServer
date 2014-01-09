@@ -3,7 +3,7 @@ package com.gmail.woodyc40.miuserver.protocol.event;
 import com.gmail.woodyc40.miuserver.frame.ClientObjectStream;
 import com.gmail.woodyc40.miuserver.protocol.Packet;
 
-public class PacketSend implements Event {
+public class PacketSend implements Event<PacketSend> {
 
     Packet packet;
     ClientObjectStream destination;
@@ -24,5 +24,10 @@ public class PacketSend implements Event {
     @Override
     public void onEvent(PacketSend e) {
         
+    }
+
+    @Override
+    public Event<?> getType() {
+        return this;
     }
 }

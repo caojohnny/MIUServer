@@ -6,6 +6,7 @@ import com.gmail.woodyc40.miuserver.frame.AdvancedServer;
 import com.gmail.woodyc40.miuserver.frame.threadsafe.FinalWrapper;
 import com.gmail.woodyc40.miuserver.frame.threadsafe.ServerThread;
 import com.gmail.woodyc40.miuserver.protocol.event.EventHandler;
+import com.gmail.woodyc40.miuserver.protocol.event.PacketSend;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -15,21 +16,20 @@ public class PacketHandler {
 
     private static FinalWrapper<PacketHandler> handler;
 
-    public static PacketHandler getInstance() {
-        FinalWrapper<PacketHandler> wrapper = logger;
+    public static PacketHandler getInstance() {
+        FinalWrapper<PacketHandler> wrapper = handler;
+        if(wrapper == null) {
+            synchronized(PacketHandler.class) {
+                if(handler == null) {
+                    handler = new FinalWrapper<>(new PacketHandler());
+                }
+                wrapper = handler;
+            }
+        }
+        return wrapper.value;
+    }
 
-        if (wrapper == null) {
-            synchronized(PacketHandler.class) {
-                if (handler == null) {
-                    handler = new FinalWrapper<>(new PacketHandler());
-                }
-                wrapper = handler;
-            }
-        }
-        return wrapper.value;
-    }
-
-    private void writePacket(ServerThread thread, Packet packet) {
+    private static void writePacket(ServerThread thread, Packet packet) {
         try {
             ObjectOutputStream stream = thread.getClient().getClientOutput();
             
@@ -43,7 +43,7 @@ public class PacketHandler {
 
     public static void sendPacket(ServerThread thread, Packet packet) {
         writePacket(thread, packet);
-        EventHandler.getInstance().handleEvent(packet);
+        EventHandler.getInstance().handleEvent(new PacketSend(packet, thread.getClient()));
     }
 
     public static void handlePacket(Packet packet) {

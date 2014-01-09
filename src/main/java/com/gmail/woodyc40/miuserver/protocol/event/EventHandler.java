@@ -2,7 +2,6 @@ package com.gmail.woodyc40.miuserver.protocol.event;
 
 
 import com.gmail.woodyc40.miuserver.frame.threadsafe.FinalWrapper;
-import com.gmail.woodyc40.miuserver.protocol.Packet;
 import com.gmail.woodyc40.miuserver.util.CodeExecutor;
 
 import java.util.ArrayList;
@@ -29,33 +28,31 @@ public class EventHandler {
 
     private EventHandler() { }
 
-    public void handleEvent(Packet p) {
-        for(EventAdapter adapter : getEvent(p)) {
-            adapter.callEvent(p);
+    public void handleEvent(Event<? extends Event<?>> e) {
+        for(EventAdapter adapter : getEvent(e)) {
+            adapter.callEvent(e);
         }
     }
 
-    private List<EventAdapter> getEvent(Packet p) {
+    private List<EventAdapter> getEvent(Event<?> e) {
         List<EventAdapter> adapterList = new ArrayList<>();
         for(EventAdapter adapter : registered) {
-            if(adapter.getType() == p.getType()) {
+            if(adapter.getType() == e.getType()) {
                 adapterList.add(adapter);
             }
         }
         return adapterList;
     }
 
-    public static void register(EventAdapter adapter) {
+    public void register(EventAdapter adapter) {
         registered.add(adapter);
     }
 
-    public static void register(final Event e) {
-        EventAdapter adapter = new EventAdapter(new CodeExecutor<Event>() {
+    public void register(final Event<Event<?>> e) {
+        EventAdapter adapter = new EventAdapter(new CodeExecutor<Event<? extends Event<?>>>(e) {
             @Override
-            public void runCode(Event event) {
-                if(event instanceof e) {
-                    event.onEvent();
-                }
+            public void runCode(Event<? extends Event<?>> event) {
+                e.onEvent(event);
             }
         });
     }

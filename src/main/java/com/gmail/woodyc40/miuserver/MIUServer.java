@@ -9,10 +9,13 @@ public class MIUServer {
 
     public static void main(String args[]) {
         server.openConnections();
+        Logger.getInstance().log("Started Server");
+
+        Logger.getInstance().log("Connections enabled. Players may now join");
         server.enableConnection();
         server.listen();
 
-        Listener listener = new Listener(new CodeExecutor<Boolean>() {
+        Listener listener = new Listener(new CodeExecutor<Boolean>(Boolean.TRUE) {
             @Override
             public void runCode(Boolean aBoolean) {
                 while(aBoolean) {

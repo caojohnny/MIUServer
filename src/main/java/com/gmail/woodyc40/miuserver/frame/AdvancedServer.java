@@ -47,10 +47,9 @@ public class AdvancedServer implements BasicServer {
                 if((sock = socket.accept()) != null) {
                     ClientObjectStream cos = new ClientObjectStream().connect(sock);
                     if(cos == null) {
+                        Logger.getInstance().log("Illegal player tried to login, disconnecting");
                         continue;
                     }
-
-                    System.out.print("Connected client from " + sock.getRemoteSocketAddress().toString());
 
                     Object authentication = cos.getClientInput().readObject();
                     String name = ((Client) authentication).getName();
@@ -60,10 +59,13 @@ public class AdvancedServer implements BasicServer {
 
                     players.add(p);
                     thread.start();
+
+                    Logger.getInstance().log("Successfully connected " + name);
                 }
             } catch (IOException | ClassNotFoundException e) {
                 assert sock != null;
                 Logger.getInstance().logError("Failed to bind " + sock.getRemoteSocketAddress().toString(), e);
+                break;
             }
         }
     }
@@ -74,7 +76,7 @@ public class AdvancedServer implements BasicServer {
             return;
         }
         
-        PacketHandler.handlePacket(p.getStream(), new PacketDisconnect(p));
+        PacketHandler.handlePacket(new PacketDisconnect(p));
         p.getStream().getClient().disconnect();
         players.remove(p);
     }
@@ -88,11 +90,12 @@ public class AdvancedServer implements BasicServer {
         while(true) {
             for(Player p : players) {
                 ObjectInputStream stream = p.getStream().getClient().getClientInput();
-                Packet packet = null;
+                Packet packet;
                 try {
                     packet = (Packet) stream.readObject();
                 } catch (IOException | ClassNotFoundException e) {
                     Logger.getInstance().logError("Packet could not be read", e);
+                    break;
                 }
                 
                 if(packet != null) {
@@ -128,6 +131,7 @@ public class AdvancedServer implements BasicServer {
         }    
         port = 0;
 
+        Logger.getInstance().log("Server shutdown successful");
         System.exit(0);
     }
     
