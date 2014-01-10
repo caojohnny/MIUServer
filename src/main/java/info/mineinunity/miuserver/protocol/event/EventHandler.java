@@ -58,4 +58,9 @@ public class EventHandler {
         });
     }
 
+    public void unregister(EventAdapter a) {
+        if(registered.contains(a))
+            registered.remove(a);
+    }
+
 }

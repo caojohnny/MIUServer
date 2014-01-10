@@ -22,7 +22,7 @@ public class PacketSend implements Event<PacketSend> {
     }
 
     @Override
-    public void onEvent(PacketSend e) {
+    public void onEvent(Event<? extends Event<?>> e) {
 
     }
 

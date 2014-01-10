@@ -1,7 +1,7 @@
 package info.mineinunity.miuserver.protocol.event;
 
 public interface Event<T> {
-    public void onEvent(T e);
+    public void onEvent(Event<? extends Event<?>> e);
 
     public Event<?> getType();
 }

@@ -5,7 +5,6 @@ import info.mineinunity.miuserver.api.entity.Player;
 import info.mineinunity.miuserver.frame.threadsafe.ServerThread;
 import info.mineinunity.miuserver.protocol.Packet;
 import info.mineinunity.miuserver.protocol.PacketHandler;
-import info.mineinunity.miuserver.protocol.auth.Client;
 import info.mineinunity.miuserver.protocol.toclient.PacketDisconnect;
 
 import java.io.IOException;
@@ -51,8 +50,7 @@ public class AdvancedServer implements BasicServer {
                         continue;
                     }
 
-                    Object authentication = cos.getClientInput().readObject();
-                    String name = ((Client) authentication).getName();
+                    String name = cos.auth.getName();
 
                     ServerThread thread = new ServerThread(cos);
                     thread.start();
@@ -61,6 +59,7 @@ public class AdvancedServer implements BasicServer {
             } catch (IOException | ClassNotFoundException e) {
                 assert sock != null;
                 Logger.getInstance().logError("Failed to bind " + sock.getRemoteSocketAddress().toString(), e);
+                shutdown();
                 break;
             }
         }

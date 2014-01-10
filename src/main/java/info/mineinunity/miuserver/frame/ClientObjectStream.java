@@ -13,6 +13,8 @@ public class ClientObjectStream {
     private ObjectOutputStream clientOutStream;
     private Socket client;
 
+    public Client auth;
+
     public ClientObjectStream connect(Socket client) throws IOException, ClassNotFoundException {
         this.clientInStream = new ObjectInputStream(client.getInputStream());
         this.clientOutStream = new ObjectOutputStream(client.getOutputStream());
@@ -21,10 +23,11 @@ public class ClientObjectStream {
         Object packet;
         while (true) {
             if ((packet = clientInStream.readObject()) != null && packet instanceof Client) {
-                Logger.getInstance().log("Successfully authenticated");
+                Logger.getInstance().log("Successfully authenticated " + ((Client) packet).getName());
                 break;
             }
         }
+        auth = (Client) packet;
 
         return this;
     }

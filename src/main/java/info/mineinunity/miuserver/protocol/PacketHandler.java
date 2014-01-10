@@ -5,8 +5,11 @@ import info.mineinunity.miuserver.api.entity.Player;
 import info.mineinunity.miuserver.frame.AdvancedServer;
 import info.mineinunity.miuserver.frame.threadsafe.FinalWrapper;
 import info.mineinunity.miuserver.frame.threadsafe.ServerThread;
+import info.mineinunity.miuserver.protocol.event.Event;
+import info.mineinunity.miuserver.protocol.event.EventAdapter;
 import info.mineinunity.miuserver.protocol.event.EventHandler;
 import info.mineinunity.miuserver.protocol.event.PacketSend;
+import info.mineinunity.miuserver.util.CodeExecutor;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -43,7 +46,15 @@ public class PacketHandler {
 
     private void sendPacket(ServerThread thread, Packet packet) {
         writePacket(thread, packet);
+        EventAdapter adapter = new EventAdapter(new CodeExecutor<Event<? extends Event<?>>>(new PacketSend(packet, thread.getClient())) {
+            @Override   public void runCode(Event<? extends Event<?>> event) {
+                event.onEvent(event);
+            }
+        });
+
         EventHandler.getInstance().handleEvent(new PacketSend(packet, thread.getClient()));
+
+        EventHandler.getInstance().unregister(adapter);
     }
 
     public void handlePacket(Packet packet) {
