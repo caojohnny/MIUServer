@@ -27,10 +27,10 @@ EventHandler.getInstance().register(new ClassName());
 or use the EventAdapter feature like so:
 ```java
 
-EventAdapter adapter = new EventAdapter(new CodeExecutor<PacketSend>(new PacketSend()) {
+EventAdapter<PacketSend> adapter = new EventAdapter<>(new CodeExecutor<Event<PacketSend>>(new PacketSend(/* Data here */)) {
     @Override
-    public void runCode(PacketSend event) {
-        // Do stuff
+    public void runCode(Event<PacketSend> e) {
+        e.onEvent(e);
     }
 });
 ```

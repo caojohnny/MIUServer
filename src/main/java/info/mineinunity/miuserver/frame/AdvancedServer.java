@@ -102,15 +102,14 @@ public class AdvancedServer implements BasicServer {
             return;
         }
 
-        while (true) {
+        while(true) {
             for (Player p : players) {
                 ObjectInputStream stream = p.getStream().getClient().getClientInput();
-                Packet packet;
+                Packet packet = null;
                 try {
                     packet = (Packet) stream.readObject();
-                } catch (IOException | ClassNotFoundException e) {
+                } catch (IOException | ClassNotFoundException | ClassCastException e) {
                     Logger.getInstance().logError("Packet could not be read", e);
-                    break;
                 }
 
                 if (packet != null) {
@@ -134,6 +133,7 @@ public class AdvancedServer implements BasicServer {
         if (enabled) {
             return;
         }
+        enabled = false;
 
         for (Player p : players) {
             disconnect(p);

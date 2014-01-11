@@ -42,12 +42,12 @@ public class PacketSend implements Event<PacketSend> {
     }
 
     @Override
-    public void onEvent(Event<? extends Event<?>> e) {
+    public void onEvent(Event<PacketSend> e) {
 
     }
 
     @Override
-    public Event<?> getType() {
+    public Event<PacketSend> getType() {
         return this;
     }
 }

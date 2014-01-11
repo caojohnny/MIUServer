@@ -22,20 +22,19 @@ package info.mineinunity.miuserver.protocol.event;
 
 import info.mineinunity.miuserver.util.CodeExecutor;
 
-public class EventAdapter {
-    private final CodeExecutor<Event<? extends Event<?>>> ce;
+public class EventAdapter<T> {
+    private final CodeExecutor<Event<T>> ce;
 
-    public EventAdapter(CodeExecutor<Event<? extends Event<?>>> ce) {
+    public EventAdapter(CodeExecutor<Event<T>> ce) {
         this.ce = ce;
-        EventHandler.getInstance().register(this);
+        EventHandler.getInstance().register((EventAdapter) this);
     }
 
-    public Event<? extends Event<?>> getType() {
+    public Event<T> getType() {
         return ce.getType();
     }
 
-    public void callEvent(Event<? extends Event<?>> event) {
-        ce.runCode(event);
+    public void callEvent(Event<?> event) {
+        ce.runCode((Event<T>) event);
     }
-
 }

@@ -35,8 +35,6 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 
 public class PacketHandler {
-    ServerThread thread;
-
     private static FinalWrapper<PacketHandler> handler;
 
     public static PacketHandler getInstance() {
@@ -64,16 +62,17 @@ public class PacketHandler {
         }
     }
 
-    private void sendPacket(ServerThread thread, Packet packet) {
+    private <T extends Event<?>> void sendPacket(ServerThread thread, Packet packet) {
         writePacket(thread, packet);
-        EventAdapter adapter = new EventAdapter(new CodeExecutor<Event<? extends Event<?>>>(new PacketSend(packet, thread.getClient())) {
-            @Override   public void runCode(Event<? extends Event<?>> event) {
-                event.onEvent(event);
+
+        Event<PacketSend> event = new PacketSend(packet, thread.getClient());
+        EventAdapter<T> adapter = new EventAdapter<>(new CodeExecutor<Event<T>>((Event<T>) event) {
+            @Override
+            public void runCode(Event<T> e) {
+                e.onEvent(e);
             }
         });
-
         EventHandler.getInstance().handleEvent(new PacketSend(packet, thread.getClient()));
-
         EventHandler.getInstance().unregister(adapter);
     }
 

@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EventHandler {
-    private static final List<EventAdapter> registered = new ArrayList<>();
+    private static final List<EventAdapter<? extends Event<?>>> registered = new ArrayList<>();
 
     private static FinalWrapper<EventHandler> logger;
 
@@ -49,15 +49,15 @@ public class EventHandler {
     private EventHandler() {
     }
 
-    public void handleEvent(Event<? extends Event<?>> e) {
-        for (EventAdapter adapter : getEvent(e)) {
+    public <T extends Event<T>> void handleEvent(Event<T> e) {
+        for (EventAdapter<?> adapter : getEvent(e)) {
             adapter.callEvent(e);
         }
     }
 
-    private List<EventAdapter> getEvent(Event<?> e) {
-        List<EventAdapter> adapterList = new ArrayList<>();
-        for (EventAdapter adapter : registered) {
+    private <T extends Event<T>> List<EventAdapter<?>> getEvent(Event<T> e) {
+        List<EventAdapter<?>> adapterList = new ArrayList<>();
+        for (EventAdapter<? extends Event<?>> adapter : registered) {
             if (e.getClass().isInstance(adapter.getType())) {
                 adapterList.add(adapter);
             }
@@ -65,22 +65,21 @@ public class EventHandler {
         return adapterList;
     }
 
-    public void register(EventAdapter adapter) {
+    public <T extends Event<T>> void register(EventAdapter<T> adapter) {
         registered.add(adapter);
     }
 
-    public void register(final Event<Event<?>> e) {
-        EventAdapter adapter = new EventAdapter(new CodeExecutor<Event<? extends Event<?>>>(e) {
+    public <T extends Event<T>> void register(final Event<T> e) {
+        EventAdapter<T> adapter = new EventAdapter<>(new CodeExecutor<Event<T>>(e) {
             @Override
-            public void runCode(Event<? extends Event<?>> event) {
+            public void runCode(Event<T> event) {
                 e.onEvent(event);
             }
         });
     }
 
     public void unregister(EventAdapter a) {
-        if(registered.contains(a))
+        if (registered.contains(a))
             registered.remove(a);
     }
-
 }
