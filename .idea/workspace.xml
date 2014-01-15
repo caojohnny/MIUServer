@@ -6,15 +6,24 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36eb003b-47a5-4dc7-a16f-879184be5b4d" name="Default" comment="Protocol works now :D">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/AdvancedServer.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/AdvancedServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/Event.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/Event.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventAdapter.java" />
+    <list default="true" id="36eb003b-47a5-4dc7-a16f-879184be5b4d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/block/Block.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/block/Block.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventHandler.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/Location.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/Location.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/Logger.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/Logger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/MIUServer.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/MIUServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/Material.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/Material.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/PacketHandler.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/PacketHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/PacketSend.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/PacketSend.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/entity/Player.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/entity/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/ServerHandler.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/ServerHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\info\mineinunity\miuserver\frame\AdvancedServer.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/framework/AdvancedServer.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\info\mineinunity\miuserver\frame\BasicServer.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/framework/BasicServer.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\info\mineinunity\miuserver\frame\ClientObjectStream.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/framework/ClientObjectStream.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\info\mineinunity\miuserver\frame\threadsafe\FinalWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/framework/threadsafe/FinalWrapper.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\info\mineinunity\miuserver\frame\threadsafe\Listener.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/framework/threadsafe/Listener.java" />
+      <change type="MOVED" beforePath="F:\IntelliJProj\MIUServer\src\main\java\info\mineinunity\miuserver\frame\threadsafe\ServerThread.java" afterPath="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/framework/threadsafe/ServerThread.java" />
     </list>
     <ignored path="MIUServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +36,10 @@
     <file path="$PROJECT_DIR$/../UtilityLib/src/main/java/com/gmail/woodyc40/utilitylib/reflection/ReflectionUtil.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389400713329" ignored="false" />
     <file path="/pom.xml" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389150445849" ignored="false" />
     <file path="/AdvancedServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389401162152" ignored="false" />
-    <file path="/Logger.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389155988564" ignored="false" />
+    <file path="/Logger.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389762779849" ignored="false" />
     <file path="/ObjectStream.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388727833554" ignored="false" />
     <file path="/ClientObjectStream.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389319032651" ignored="false" />
-    <file path="/Dummy.txt" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389401184023" ignored="false" />
+    <file path="/Dummy.txt" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389764122532" ignored="false" />
     <file path="/Client.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237019248" ignored="false" />
     <file path="/.travis.yml" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388792019199" ignored="false" />
     <file path="/ServerThread.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389230933682" ignored="false" />
@@ -41,14 +50,14 @@
     <file path="/EventHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389400243343" ignored="false" />
     <file path="/CodeExecutor.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389400317835" ignored="false" />
     <file path="/ReturnableCodeExecutor.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388796479483" ignored="false" />
-    <file path="/EventAdapter.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389400370634" ignored="false" />
+    <file path="/EventAdapter.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389762907452" ignored="false" />
     <file path="/PacketType.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389152029859" ignored="false" />
     <file path="/PacketSend.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389400575612" ignored="false" />
     <file path="/Packet.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388798240315" ignored="false" />
-    <file path="/MIUServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389228871275" ignored="false" />
+    <file path="/MIUServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389762713661" ignored="false" />
     <file path="/README.md" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389400954958" ignored="false" />
     <file path="/PacketDisconnect.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388800379955" ignored="false" />
-    <file path="/Player.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388800096661" ignored="false" />
+    <file path="/Player.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389762597660" ignored="false" />
     <file path="/ServerHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388800255648" ignored="false" />
     <file path="/BasicServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388800400712" ignored="false" />
     <file path="F:/BattleDome/src/main/java/com/gmail/woodyc40/battledome/runnables/Count.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388880855010" ignored="false" />
@@ -76,14 +85,14 @@
     <file path="/SafeSingleton.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1388901153409" ignored="false" />
     <file path="/SingletonWrapper.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389059124152" ignored="false" />
     <file path="/PacketBlockBreak.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389059712597" ignored="false" />
-    <file path="/Block.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389059861488" ignored="false" />
+    <file path="/Block.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389762612374" ignored="false" />
     <file path="/Location.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389317883549" ignored="false" />
-    <file path="/Material.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389059967222" ignored="false" />
+    <file path="/Material.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389762578667" ignored="false" />
     <file path="/Listener.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389060914415" ignored="false" />
     <file path="/fragment.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389236946679" ignored="false" />
     <file path="/PacketPlayerMove.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389238014205" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/MIUClient.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389400661452" ignored="false" />
-    <file path="/MIUClient.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389317993662" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/MIUClient.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389764104726" ignored="false" />
+    <file path="/MIUClient.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389764103608" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/Clietn.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389155783808" ignored="false" />
     <file path="/Clietn.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389155783808" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/Client.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389229401621" ignored="false" />
@@ -106,49 +115,68 @@
     <file path="$PROJECT_DIR$/../MIUClient/src/util/ReturnableCodeExecutor.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237515827" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/frame/threadsafe/Listener.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/frame/ClientObjectStream.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/PacketHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/event/EventAdapter.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/util/CodeExecutor.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/fromclient/ClientConnection.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/api/block/Block.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/PacketHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/event/EventAdapter.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/util/CodeExecutor.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/fromclient/ClientConnection.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/api/block/Block.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/frame/threadsafe/ServerThread.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/util/ReturnableCodeExecutor.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/api/entity/Player.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/PacketType.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/Packet.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/fromclient/PacketBlockBreak.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/api/Material.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/util/ReturnableCodeExecutor.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/api/entity/Player.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/PacketType.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/Packet.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/fromclient/PacketBlockBreak.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/api/Material.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/frame/BasicServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/fromclient/PacketPlayerMove.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/toclient/PacketDisconnect.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/event/Event.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/event/PacketSend.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/MIUServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/api/Location.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/event/EventHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/fromclient/PacketPlayerMove.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/toclient/PacketDisconnect.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/event/Event.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/event/PacketSend.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/MIUServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/api/Location.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/event/EventHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/frame/AdvancedServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/auth/Client.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/api/ServerHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/protocol/auth/Client.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/api/ServerHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/frame/threadsafe/FinalWrapper.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/Logger.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237599630" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/event/EventHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630738" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/Logger.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/event/EventHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/frame/AdvancedServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/api/ServerHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/Logger.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/api/ServerHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/Logger.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023646" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/frame/threadsafe/Listener.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/toclient/PacketDisconnect.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/toclient/PacketDisconnect.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/frame/ClientObjectStream.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/PacketHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/event/EventAdapter.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/fromclient/PacketPlayerMove.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/fromclient/PacketBlockBreak.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/event/Event.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/fromclient/ClientConnection.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/event/PacketSend.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/api/block/Block.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/MIUServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237630739" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/PacketHandler.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023646" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/event/EventAdapter.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/fromclient/PacketPlayerMove.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/fromclient/PacketBlockBreak.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/event/Event.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/fromclient/ClientConnection.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023646" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/event/PacketSend.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/api/block/Block.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023646" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/MIUServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
     <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/frame/threadsafe/ServerThread.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389237915121" ignored="false" />
-    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/api/Location.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389317925342" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/api/Location.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023646" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/framework/BasicServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008794" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/framework/threadsafe/Listener.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/framework/ClientObjectStream.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/framework/threadsafe/FinalWrapper.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/framework/threadsafe/ServerThread.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/miuserver/framework/AdvancedServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763008795" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/api/entity/Player.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/framework/BasicServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/util/ReturnableCodeExecutor.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/auth/Client.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/api/Material.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/util/CodeExecutor.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023645" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/PacketType.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023646" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/framework/threadsafe/Listener.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023646" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/framework/ClientObjectStream.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023646" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/framework/threadsafe/FinalWrapper.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023646" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/framework/threadsafe/ServerThread.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023646" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/framework/AdvancedServer.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023646" ignored="false" />
+    <file path="$PROJECT_DIR$/../MIUClient/src/info/mineinunity/miuserver/protocol/Packet.java" changelist="36eb003b-47a5-4dc7-a16f-879184be5b4d" time="1389763023646" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,21 +237,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PacketHandler.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PacketHandler.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/PacketHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="51" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.0">
+            <state line="68" column="80" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.55211914">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="27" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MIUServer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/MIUServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="13" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#3096#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventAdapter.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventAdapter.java">
+      <file leaf-file-name="ServerHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/ServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.4089347">
+            <state line="25" column="13" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logger.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/Logger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="27" selection-start="1755" selection-end="1755" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -247,22 +302,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/MIUServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/threadsafe/ServerThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/entity/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/ServerHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/fromclient/ClientConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/fromclient/PacketPlayerMove.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/Location.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/ClientObjectStream.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/Event.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/util/CodeExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/PacketHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/PacketSend.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/AdvancedServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/Location.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/Material.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/entity/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/block/Block.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/MIUServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/Logger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventAdapter.java" />
       </list>
     </option>
   </component>
@@ -274,32 +329,7 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="MIUServer" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="MIUServer" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -355,7 +385,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -612,7 +641,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MIUServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MIUServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="miuserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threadsafe" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -649,6 +712,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -665,14 +729,14 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="Downloaded.Files.Path" value="" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.MIUServer">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -711,6 +775,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -736,19 +813,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -880,11 +944,15 @@
       <created>1389319487854</created>
       <updated>1389319487854</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Reworked protocol. Again.">
+      <created>1389401209738</created>
+      <updated>1389401209738</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -896,10 +964,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741398" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33724654" sideWeight="0.67074525" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33724654" sideWeight="0.6807564" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6006674" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -951,7 +1019,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Protocol works now :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish the rework" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -974,6 +1042,8 @@
     <MESSAGE value="Fixed static code errors&#10;" />
     <MESSAGE value="Hey it works! Fix the protocol sending next time :DD" />
     <MESSAGE value="Protocol works now :D" />
+    <MESSAGE value="Reworked protocol. Again." />
+    <MESSAGE value="Finish the rework" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -983,90 +1053,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.8993174">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/MIUServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="575" selection-end="575" vertical-scroll-proportion="0.3771331">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/ClientObjectStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="100" selection-start="973" selection-end="973" vertical-scroll-proportion="0.2901024">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/fromclient/PacketPlayerMove.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="4" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.33028573">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/util/CodeExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="18" selection-start="873" selection-end="873" vertical-scroll-proportion="0.07771429">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="31" selection-start="1761" selection-end="1761" vertical-scroll-proportion="0.49485713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/PacketSend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="75" selection-start="991" selection-end="991" vertical-scroll-proportion="0.03307393">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="120" selection-start="944" selection-end="944" vertical-scroll-proportion="0.959144">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/BasicServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="4" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.4299611">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="857" selection-end="857" vertical-scroll-proportion="0.13229571">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/Packet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="4" selection-start="849" selection-end="849" vertical-scroll-proportion="0.13229571">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/ServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="937" selection-end="937" vertical-scroll-proportion="0.16536964">
           <folding />
         </state>
       </provider>
@@ -1078,16 +1067,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/PacketHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="51" selection-start="2181" selection-end="2181" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#3096#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/frame/AdvancedServer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/framework/AdvancedServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="104" column="8" selection-start="3301" selection-end="3301" vertical-scroll-proportion="0.33268481">
           <folding>
@@ -1096,9 +1076,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="47" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/entity/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="1039" selection-end="1039" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/block/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/Material.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="20" selection-start="857" selection-end="857" vertical-scroll-proportion="0.07771429">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/framework/threadsafe/Listener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Java/jdk7/jre/lib/jfxrt.jar!/javafx/scene/paint/Color.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="161" selection-end="161" vertical-scroll-proportion="-0.31085715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="27" selection-start="1755" selection-end="1755" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/MIUServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="13" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/api/ServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="24" selection-start="2362" selection-end="2362" vertical-scroll-proportion="0.37159532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/fromclient/ClientConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="12" selection-start="1931" selection-end="1931" vertical-scroll-proportion="0.5311284">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/event/EventAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.4089347">
+        <state line="37" column="27" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/info/mineinunity/miuserver/protocol/PacketHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="80" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.55211914">
           <folding />
         </state>
       </provider>

@@ -21,7 +21,7 @@
 package info.mineinunity.miuserver.api;
 
 import info.mineinunity.miuserver.api.entity.Player;
-import info.mineinunity.miuserver.frame.AdvancedServer;
+import info.mineinunity.miuserver.framework.AdvancedServer;
 
 public class ServerHandler {
 

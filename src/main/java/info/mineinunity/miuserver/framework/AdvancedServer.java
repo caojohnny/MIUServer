@@ -18,11 +18,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package info.mineinunity.miuserver.frame;
+package info.mineinunity.miuserver.framework;
 
 import info.mineinunity.miuserver.Logger;
 import info.mineinunity.miuserver.api.entity.Player;
-import info.mineinunity.miuserver.frame.threadsafe.ServerThread;
+import info.mineinunity.miuserver.framework.threadsafe.ServerThread;
 import info.mineinunity.miuserver.protocol.Packet;
 import info.mineinunity.miuserver.protocol.PacketHandler;
 import info.mineinunity.miuserver.protocol.toclient.PacketDisconnect;

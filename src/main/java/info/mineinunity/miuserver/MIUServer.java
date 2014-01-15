@@ -20,8 +20,8 @@
  */
 package info.mineinunity.miuserver;
 
-import info.mineinunity.miuserver.frame.AdvancedServer;
-import info.mineinunity.miuserver.frame.threadsafe.Listener;
+import info.mineinunity.miuserver.framework.AdvancedServer;
+import info.mineinunity.miuserver.framework.threadsafe.Listener;
 import info.mineinunity.miuserver.util.CodeExecutor;
 
 public class MIUServer {

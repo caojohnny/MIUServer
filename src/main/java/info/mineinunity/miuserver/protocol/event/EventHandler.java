@@ -21,7 +21,7 @@
 package info.mineinunity.miuserver.protocol.event;
 
 
-import info.mineinunity.miuserver.frame.threadsafe.FinalWrapper;
+import info.mineinunity.miuserver.framework.threadsafe.FinalWrapper;
 import info.mineinunity.miuserver.util.CodeExecutor;
 
 import java.util.ArrayList;

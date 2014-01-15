@@ -18,7 +18,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package info.mineinunity.miuserver.frame.threadsafe;
+package info.mineinunity.miuserver.framework.threadsafe;
 
 public class FinalWrapper<T> {
     public final T value;

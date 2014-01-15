@@ -20,7 +20,7 @@
  */
 package info.mineinunity.miuserver;
 
-import info.mineinunity.miuserver.frame.threadsafe.FinalWrapper;
+import info.mineinunity.miuserver.framework.threadsafe.FinalWrapper;
 
 public class Logger {
     private static FinalWrapper<Logger> logger;

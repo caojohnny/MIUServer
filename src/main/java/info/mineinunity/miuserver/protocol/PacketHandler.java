@@ -22,9 +22,9 @@ package info.mineinunity.miuserver.protocol;
 
 import info.mineinunity.miuserver.Logger;
 import info.mineinunity.miuserver.api.entity.Player;
-import info.mineinunity.miuserver.frame.AdvancedServer;
-import info.mineinunity.miuserver.frame.threadsafe.FinalWrapper;
-import info.mineinunity.miuserver.frame.threadsafe.ServerThread;
+import info.mineinunity.miuserver.framework.AdvancedServer;
+import info.mineinunity.miuserver.framework.threadsafe.FinalWrapper;
+import info.mineinunity.miuserver.framework.threadsafe.ServerThread;
 import info.mineinunity.miuserver.protocol.event.Event;
 import info.mineinunity.miuserver.protocol.event.EventAdapter;
 import info.mineinunity.miuserver.protocol.event.EventHandler;

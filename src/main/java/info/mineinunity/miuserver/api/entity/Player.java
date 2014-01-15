@@ -20,9 +20,12 @@
  */
 package info.mineinunity.miuserver.api.entity;
 
-import info.mineinunity.miuserver.frame.threadsafe.ServerThread;
+import info.mineinunity.miuserver.framework.threadsafe.ServerThread;
 
-public class Player {
+import java.io.Serializable;
+
+public class Player implements Serializable  {
+    private static final long serialVersionUID = 4377500550270916244L;
 
     private final ServerThread thread;
     private final String name;

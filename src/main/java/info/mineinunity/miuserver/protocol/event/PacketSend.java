@@ -20,7 +20,7 @@
  */
 package info.mineinunity.miuserver.protocol.event;
 
-import info.mineinunity.miuserver.frame.ClientObjectStream;
+import info.mineinunity.miuserver.framework.ClientObjectStream;
 import info.mineinunity.miuserver.protocol.Packet;
 
 public class PacketSend implements Event<PacketSend> {

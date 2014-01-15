@@ -23,7 +23,10 @@ package info.mineinunity.miuserver.api.block;
 import info.mineinunity.miuserver.api.Location;
 import info.mineinunity.miuserver.api.Material;
 
-public class Block {
+import java.io.Serializable;
+
+public class Block implements Serializable {
+    private static final long serialVersionUID = 7096842357276401602L;
 
     private final Location loc;
     private final Material m;
