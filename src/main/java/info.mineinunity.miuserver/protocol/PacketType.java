@@ -21,12 +21,12 @@
 package info.mineinunity.miuserver.protocol;
 
 import info.mineinunity.miuserver.protocol.fromclient.PacketBlockBreak;
-import info.mineinunity.miuserver.protocol.fromclient.PacketPlayerMove;
+import info.mineinunity.miuserver.protocol.fromclient.PacketEntityMove;
 import info.mineinunity.miuserver.protocol.toclient.PacketDisconnect;
 
 public enum PacketType {
 
-    DISCONNECT(PacketDisconnect.class), BLOCK_BREAK(PacketBlockBreak.class), BLOCK_PLACE(PacketBlockBreak.class), MOVE(PacketPlayerMove.class);
+    DISCONNECT(PacketDisconnect.class), BLOCK_BREAK(PacketBlockBreak.class), BLOCK_PLACE(PacketBlockBreak.class), MOVE(PacketEntityMove.class);
 
     private final Class<?> args;
 
