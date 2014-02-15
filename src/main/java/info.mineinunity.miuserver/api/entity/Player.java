@@ -24,7 +24,7 @@ import info.mineinunity.miuserver.framework.threadsafe.ServerThread;
 
 import java.io.Serializable;
 
-public class Player implements Serializable  {
+public class Player extends Entity implements Serializable {
     private static final long serialVersionUID = 4377500550270916244L;
 
     private final ServerThread thread;

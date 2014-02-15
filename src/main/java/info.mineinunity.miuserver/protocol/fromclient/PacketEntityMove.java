@@ -21,23 +21,23 @@
 package info.mineinunity.miuserver.protocol.fromclient;
 
 import info.mineinunity.miuserver.api.Location;
-import info.mineinunity.miuserver.api.entity.Player;
+import info.mineinunity.miuserver.api.entity.Entity;
 import info.mineinunity.miuserver.protocol.Packet;
 import info.mineinunity.miuserver.protocol.PacketType;
 
 import java.io.Serializable;
 
-public class PacketPlayerMove implements Packet, Serializable {
+public class PacketEntityMove implements Packet, Serializable {
     private static final long serialVersionUID = -2961847818963671166L;
 
     private final Location from;
     private final Location to;
-    private final Player player;
+    private final Entity entity;
 
-    public PacketPlayerMove(Location l, Location loc, Player p) {
+    public PacketEntityMove(Location l, Location loc, Entity e) {
         this.from = l;
         this.to = loc;
-        this.player = p;
+        this.entity = e;
     }
 
     public Location getFrom() {
@@ -48,8 +48,8 @@ public class PacketPlayerMove implements Packet, Serializable {
         return to;
     }
 
-    public Player getPlayer() {
-        return player;
+    public Entity getEntity() {
+        return entity;
     }
 
     @Override
