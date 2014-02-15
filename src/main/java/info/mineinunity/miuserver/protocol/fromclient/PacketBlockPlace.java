@@ -18,23 +18,34 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package info.mineinunity.miuserver.protocol;
+package info.mineinunity.miuserver.protocol.fromclient;
 
-import info.mineinunity.miuserver.protocol.fromclient.PacketBlockBreak;
-import info.mineinunity.miuserver.protocol.fromclient.PacketPlayerMove;
-import info.mineinunity.miuserver.protocol.toclient.PacketDisconnect;
+import info.mineinunity.miuserver.api.block.Block;
+import info.mineinunity.miuserver.protocol.Packet;
+import info.mineinunity.miuserver.protocol.PacketType;
 
-public enum PacketType {
+import java.io.Serializable;
 
-    DISCONNECT(PacketDisconnect.class), BLOCK_BREAK(PacketBlockBreak.class), BLOCK_PLACE(PacketBlockBreak.class), MOVE(PacketPlayerMove.class);
+public class PacketBlockPlace implements Packet, Serializable {
+    private static final long serialVersionUID = -1739894988291076245L;
 
-    private final Class<?> args;
+    private final Block b;
 
-    PacketType(Class<?> cl) {
-        args = cl;
+    public PacketBlockPlace(Block b) {
+        this.b = b;
     }
 
-    public Class<?> getArgs() {
-        return args;
+    public Block getBlock() {
+        return b;
+    }
+
+    @Override
+    public void onSend() {
+
+    }
+
+    @Override
+    public PacketType getType() {
+        return PacketType.BLOCK_PLACE;
     }
 }
